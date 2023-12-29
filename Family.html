@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCA_PersonalBlog</title>
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman';
+    color: #fff;
+}
+.bars{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bolder;
+    width: 150x;
+    cursor: pointer;
+    color: #F4C2C2;
+}
+.bars ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.bars ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #F4C2C2;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.bars ul li:hover::after{
+    width: 100%;
+}
+.Family{ 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./2.png);
+    background-size: cover;
+    background-position: center;    
+}
+.Family h1{
+    font-size: 50px;
+    font-weight: 60px;
+    color: #fff;
+    text-align: left;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.Family p{
+    font-size: 20px;
+    font-weight: 15px;
+    color: #fff;
+    padding-left: 150px;
+    padding-top: 30px;
+    padding-right: 700px;
+    text-indent: 30px;
+}
+.img{
+   float: right;
+   margin-right: 60px;
+   margin-top: 10px;  
+   border: 13px solid #F4C2C2;
+   border-radius: 4px;
+   width: 575px;
+   height: 375px;
+} 
+@media screen and (max-width: 900px) {
+  .Family p {
+    padding-top: 450px;
+    color: #fff;
+    padding-right: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./2.png);
+  }
+}
+@media screen and (max-width: 900px) {
+  p.one {
+    padding-top: 50px;
+    color: #fff;
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  p.two {
+    padding-top: 50px;
+    color: #fff;
+    padding-right: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="Family">
+       <div class="bars">
+        <div class="logo">LCA.</div>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="Family.html">Family</a></li>
+             <li><a href="Hobbies.html">Hobbies</a></li>
+             <li><a href="Education.html">Education</a></li>
+             <li><a href="Career.html">Career</a></li>
+          </ul>
+        </div>
+
+        <h1>Family Background</h1>
+        <div class="img">
+          <img src="./familybackground picture.jpeg" style="width:550px; height:350px;">
+        </div>
+          <p>I come from a family of five, including my parents and younger sisters. My parents are both hard-working. My father is a welder, and my mother is a housewife who always takes care of us. Growing up, I lived with two of my uncles. One of them has a kid, which is my second-to-last cousin. On every occasion, my aunt usually goes to our house and visits us along with my cousins. We usually hang out and eat a lot. I grew up in a peaceful house here in Taytay, Rizal.</p>
+          <p class="one">They've always guided me through my journey, and to who am I today. They have always taught me the importance of education, hard work, and perseverance. I am grateful for their love and support, and I know that I can always count on them.</p>
+          <p class="two">I am grateful for what my family has taught me, and I believe they have made me a strong and resilient person.</p>
+   </div>  
+</body>
+</html>

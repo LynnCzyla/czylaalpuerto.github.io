@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCA_PersonalBlog</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman';
+    color: #fff;
+}
+.bars{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bolder;
+    width: 150x;
+    cursor: pointer;
+    color: #F4C2C2;
+}
+.bars ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.bars ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #F4C2C2;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.bars ul li:hover::after{
+    width: 100%;
+}
+.Education { 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./2.png);
+    background-size: cover;
+    background-position: center; 
+}
+.Education h1{
+    font-size: 47px;
+    font-weight: 60px;
+    color: #fff;
+    text-align: left;
+    padding-left: 150px;
+    padding-top: 80px;
+}
+.img1 {
+   float: right;
+   margin-right: 60px;
+   margin-top: -225px;
+}
+.img2 {
+    margin-left: 50px;
+    margin-top: -265px;
+}
+.Education p{
+    font-size: 20px;
+    font-weight: 15px;
+    color: #fff;
+    padding-left: 850px;
+    padding-top: 150px;
+    padding-right: 90px;
+    text-indent: 30px;
+}
+p.one {
+    font-size: 20px;
+    font-weight: 15px;
+    color: #fff;
+    padding-left: 850px;
+    padding-top: 20px;
+    padding-right: 90px;
+    text-indent: 30px;
+}
+@media screen and (max-width: 900px) {
+  .Education p {
+    padding-top: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./2.png);
+  }
+}
+@media screen and (max-width: 900px) {
+  .img1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .img2{
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Education h1 {
+    text-align: left;
+    padding-left: 50px;
+  }
+}
+
+   </style>
+</head>
+<body>
+    <div class="Education">
+       <div class="bars">
+        <div class="logo">LCA.</div>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="Family.html">Family</a></li>
+             <li><a href="Hobbies.html">Hobbies</a></li>
+             <li><a href="Education.html">Education</a></li>
+             <li><a href="Career.html">Career</a></li>
+          </ul>
+        </div>
+        
+
+        <h1>Strength and Weaknesses<br>in terms of IT Field</h1>
+
+        <div class="img1">
+            <img src="./right.png" style="width:700px; height: 350px;">
+        </div>
+        <p>Studying in the IT course has been challenging for me because this is the first time I have encountered these programming languages, and I don't have any background knowledge in these programming languages.</p>
+
+        <p class="one">Nevertheless, I am dedicated to learning these programming languages. I am doing everything to keep up with the class and understand each lesson the professor discusses.</p>
+        <div class="img2">
+            <img src="./left.png" style="width:700px; height: 350px;">
+        </div>   
+
+    </div>
+</body>
+</html>

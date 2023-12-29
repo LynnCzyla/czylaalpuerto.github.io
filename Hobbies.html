@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCA_PersonalBlog</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman';
+    color: #fff;
+        }
+.bars{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+     text-decoration: none;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bolder;
+    width: 150x;
+    cursor: pointer;
+    color: #F4C2C2;
+}
+.bars ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.bars ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #F4C2C2;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.bars ul li:hover::after{
+    width: 100%;
+}
+.Hobbies { 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./2.png);
+    background-size: cover;
+    background-position: center;  
+}  
+.img{
+   float: right;
+   margin-right: 450px;
+   margin-top: -420px;  
+}
+.Hobbies h1{
+    font-size: 50px;
+    font-weight: 60px;
+    color: #fff;
+    text-align: right;
+    padding-right: 545px;
+    padding-top: 50px;
+}
+.Hobbies p{
+    font-size: 20px;
+    font-weight: 15px;
+    color: #fff;
+    padding-left: 850px;
+    padding-top: 35px;
+    padding-right: 80px;
+    text-indent: 30px;
+}
+@media screen and (max-width: 900px) {
+  .Hobbies p {
+    padding-top: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./2.png);
+  }
+}
+@media screen and (max-width: 900px) {
+  p.one {
+    padding-top: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .img {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Hobbies h1 {
+    text-align: left;
+    padding-left: 50px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="Hobbies">
+       <div class="bars">
+        <div class="logo">LCA.</div>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="Family.html">Family</a></li>
+             <li><a href="Hobbies.html">Hobbies</a></li>
+             <li><a href="Education.html">Education</a></li>
+             <li><a href="Career.html">Career</a></li>
+          </ul>
+        </div>
+
+        <h1>Hobbies</h1>
+            <p>When I have nothing to do, I engage in different kinds of hobbies and interests. Reading books—both online and traditional ways of reading a book. I enjoy reading a lot of books, particularly fiction. Reading a book makes me feel as though I'm in another universe. When I don't have a book to read, movies or television shows—mostly K-dramas—always keep me occupied. Sometimes, drawing nature is something I enjoy doing.</p>
+            <p class="one">My favorite hobby is spending time with my siblings because they relieve my stress from my schoolwork. I like to mess with them around, but I know I can always count on them when I need help. By doing these hobbies and interests, I always feel happy and content.</p>
+        <div class="img">
+            <img src="./hobbies (2).png" style="width:1300px; height: 600px">
+        </div>
+    </div>
+</body>
+</html>
